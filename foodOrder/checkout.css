@@ -1,0 +1,98 @@
+/* Set body background color */
+body {
+	background-color: #f2f2f2;
+}
+
+/* Center the form */
+form {
+	margin: auto;
+	width: 50%;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+/* Style the form header */
+h1 {
+	text-align: center;
+	margin-top: 0;
+}
+/* Hide the card details fields by default */
+.card-details {
+	display: none;
+}
+label{
+    font-size:40px;
+    font-family:'poppins',sans-serif;
+}
+/* Style the payment amount input */
+.payment-amount {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+
+/* Style the payment method select menu */
+.payment-method {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+
+/* Style the card details inputs */
+.card-number,
+.card-expiry,
+.card-cvv {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+
+/* Style the submit button */
+.submit-button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Style the submit button on hover */
+.submit-button:hover {
+	background-color: #3e8e41;
+}
+
+/* Style the error messages */
+.error1{
+	color: red;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#payment-page{
+   color:indianred;
+   margin-top:10px;
+   font-size:30px;
+   text-align:center;
+   margin-bottom:10px;
+}

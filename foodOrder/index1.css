@@ -1,0 +1,404 @@
+*{
+   padding:0;
+   margin:0;
+   box-sizing:border-box;
+   scrollbar-width: none;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:250px 1fr 300px;
+    height:100%;
+    overflow:hidden;
+}
+/* menu design*/
+#menu{
+    background:#77DD77;
+    
+}
+.menu-item a{
+    display:block;
+    text-decoration:none;
+    font-size:30px;
+    padding:8px 30px;
+    margin:12px 0;
+    color:white;
+    font-weight:300;
+}
+
+.menu-item a:hover{
+   background:rgb(0,0,0);
+}
+#food-container{
+    background:white;
+    overflow:scroll;
+    overflow-x:hidden;
+    box-sizing:content-box;
+    
+}
+
+#cart{
+    background:coral;
+}
+
+.your-address{
+   border:1px solid indianred;
+   color:indianred;
+   padding:5px 10px;
+   border-radius:5px;
+   margin-top:20px;
+   margin-left:50px;
+   overflow:hidden;
+   white-space:nowrap;
+   text-overflow:ellipsis;
+   cursor:pointer;
+   
+}
+
+.add-box i{
+    font-size:20px;
+}
+
+#category-name{
+     margin-top:40px;
+     margin-left:50px;
+     font-size:35px;
+     color:coral;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-top: 40px;
+}
+
+h1 span {
+  font-weight: normal;
+  color: #0099cc;
+}
+
+#category-list{
+   background:whitesmoke;
+   padding:30px;
+   overflow-y:scroll;
+}
+
+.item-menu{
+    margin:0;
+    font-size:30px;
+    margin-top:40px;
+    color:indianred;
+    background:whitesmoke;
+}
+
+.border{
+   width:80px;
+   height:4px;
+   margin:3px 0;
+   margin-bottom:30px;
+   border-radius:2px;
+   background:coral;
+}
+
+.list-card{
+   display:flex;
+   align-items:center;
+   margin-top:35px;
+   border-radius:25px;
+   cursor:pointer;
+   transition: 0.3s all ease-in-out;
+}
+
+.list-card:hover{
+   background:rgb(255,216,222);
+}
+
+.list-card:hover img{
+   transition:0.5s all ease-in-out;
+   transform:scale(1.2);
+}
+.list-card img{
+   width:50px;
+   height:50px;
+   border-radius:50%;
+}
+
+.list-name{
+   font-size:20px;
+   margin:0 10px;
+   text-decoration:none;
+   text-transform:capitalize;
+   color:rgb(94,43,43)
+}
+
+footer{
+    background-color:#111;
+}
+
+.footerContainer{
+    width : 100%;
+    padding : 20px 30px 30px 20px;
+}
+.footerContainer img {
+  
+  width: 200px; /* Adjust size as needed */
+  display:block;
+  margin:0 auto;
+  margin-top:10px;
+  
+}
+.socialIcons{
+    display:flex;
+    justify-content:center;
+}
+
+.socialIcons a{
+    text-decoration:none;
+    padding:10px;
+    background-color:white;
+    margin:10px;
+    margin-top:20px;
+    border-radius:50%;
+}
+
+.socialIcons a i{
+    font-size:3em;
+    color:black;
+    opacity:0.9
+}
+
+.socialIcons a:hover{
+    background-color:#111;
+    transition:0.5s;
+}
+
+.socialIcons a:hover i{
+    color:white;
+    transition:0.5s;
+}
+
+.footerNav{
+    margin:2px 0;
+    padding:20px;
+}
+
+.footerNav ul{
+    display:flex;
+    justify-content:center;
+    list-style-type:none;
+}
+
+.footerNav ul li a{
+    font-family:'poppins',sans-serif;
+    color:white;
+    margin:20px;
+    text-decoration:none;
+    font-size:2em;
+    opacity:0.7;
+    transition:0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity:1;
+}
+
+.footerBottom{
+    background-color:#000;
+    padding:20px;
+    text-align:center;
+}
+
+.footerBottom p{
+    color:white;
+    font-size:20px;
+}
+.footerBottom span{
+    color:white;
+    font-size;
+}
+.designer{
+    opacity:0.7;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:400px;
+    margin: 0px 5px;
+}
+
+@media (max-width:700px)
+{
+      
+}
+
+.cart-toggle{
+     
+}
+
+#cart-page{
+    background:white;
+    margin:40px 10px;
+    margin-right:5px;
+    padding:20px 30px;
+    padding-bottom:30px;
+    position:relative;
+}
+
+#cart-title{
+    font-size:35px;
+    margin:0;
+    color:indianred;
+    
+}
+
+#cart-page table{
+    width:100%;
+    margin-top:20px;
+    text-align:center;
+    
+}
+
+#cart-page table thead td{
+    font-size:25px;
+    padding-bottom:10px;
+}
+
+#m-total-amount{
+    display:none;
+}
+#cart-page table tbody td{
+    padding:10px 0;
+    font-size:20px;
+}
+
+#cart-page table tbody button{
+    outline:none;
+    border:none;
+    font-size:16px;
+    background:none;
+    background:lightcoral;
+    color:white;
+    border-radius:3px;
+    cursor:pointer;
+    margin:3px 8px;
+}
+
+#cart-page table tbody img{
+    width:75px;
+    height:75px;
+    border-radius:50px;
+}
+
+#checkout{
+    text-align:center;
+    margin:40px auto;
+    border-radius:5px;
+    background:white;
+    padding:10px 20px;
+    margin-top:120px;
+}
+
+#checkout p{
+    margin:15px 0;
+    float:right:
+    
+}
+
+#total-price,#total-item{
+    font-size:25px;
+    color:indianred;
+    
+}
+#result-found{
+    font-size:25px;
+    color:indianred;
+    margin-top:550px;
+}
+.cart-btn{
+    outline:none;
+    border:none;
+    background:crimson;
+    color:white;
+    padding:10px 25px;
+    border-radius:20px;
+    font-size:18px;
+    text-transform:uppercase;
+    bottom:30px;
+    margin:15px 0;
+    cursor:pointer;
+}
+.remove-item {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+  background-color: #ff4444;
+}
+
+.cart-btn:active{
+    color:crimson;
+    background:none;
+    border:1px solid crimson;
+}
+#delivery{
+   font-size:20px;
+   color:limegreen;
+}
+
+.EmptyCart {
+  margin-top:170px;
+  font-size: 5rem; /* increase font size to make it big */
+  font-weight: bold;
+  color: red;
+  text-align: center; /* add text-align property to center the text */
+  display: block; /* add display property to make sure the element takes up the full width */
+}
+
+/*Search*/
+#search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#search-bar {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  font-size: 16px;
+}
+
+#search-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#search-btn i {
+  margin-right: 5px;
+}
+
+
+
